@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Proxy behaviour
+
+Set `NEXT_PUBLIC_EXTERNAL_API_BASE_URL` in your environment. Any request to
+`/<service>/api/v1/*` will be forwarded to
+`${NEXT_PUBLIC_EXTERNAL_API_BASE_URL}/<service>/api/v1/*`.
+
+
 ## Getting Started
 
 First, run the development server:
